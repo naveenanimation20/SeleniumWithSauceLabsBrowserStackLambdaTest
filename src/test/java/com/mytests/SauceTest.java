@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SauceTest extends BaseTest {
+public class SauceTest extends BrowserStackBaseTest {
 
 	public void doLogin() {
 		driver.get("https://www.saucedemo.com/index.html");

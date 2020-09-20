@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BrowserStack Test automtion regression suite"
+	thread-count="3" parallel="tests" verbose="3">
+
+
+	<test name="BrowserStack Test - FF">
+		<parameter name="os" value="Windows" />
+		<parameter name="os_version" value="10" />
+		<parameter name="browser" value="Firefox" />
+		<parameter name="browser_version" value="80.0" />
+		<classes>
+			<class name="com.mytests.SauceTest" />
+		</classes>
+
+	</test>
+
+	<test name="BrowserStack Test - Chrome">
+		<parameter name="os" value="OS X" />
+		<parameter name="os_version" value="Catalina" />
+		<parameter name="browser" value="Chrome" />
+		<parameter name="browser_version" value="85.0" />
+
+		<classes>
+			<class name="com.mytests.SauceTest" />
+		</classes>
+
+	</test>
+
+
+
+
+
+
+
+
+
+
+</suite>
