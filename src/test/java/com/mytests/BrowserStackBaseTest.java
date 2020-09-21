@@ -37,10 +37,10 @@ public class BrowserStackBaseTest {
 		caps.setCapability("browser_version", browser_version);
 		caps.setCapability("name", methodName);
 
-		if (browserName.equals("chrome")) {
+		if (browserName.equals("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			caps.setCapability("browser", "Chrome");
-		} else if (browserName.equals("firefox")) {
+		} else if (browserName.equals("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			caps.setCapability("browser", "Firefox");
 		}
